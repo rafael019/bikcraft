@@ -1,10 +1,13 @@
 import React from "react";
+import imgFacebook from "../assets/img/redes-sociais/facebook.png";
+import imgInstagram from "../assets/img/redes-sociais/instagram.png";
+import imgTwitter from "../assets/img/redes-sociais/twitter.png";
 
 function Rodape() {
   return (
     <>
-      <div class="quebra">
-        <blockquote class="quote-externo container">
+      <div className="quebra">
+        <blockquote className="quote-externo container">
           <p>
             “O verdadeiro segredo da felicidade está em ter um genuino interesse
             por todos os detalhes da vida cotidiana”
@@ -36,26 +39,17 @@ function Rodape() {
               <ul>
                 <li>
                   <a href="#" target="_blank">
-                    <img
-                      src="./assets/img/redes-sociais/facebook.png"
-                      alt="Facebook"
-                    />
+                    <img src={imgFacebook} alt="Facebook" />
                   </a>
                 </li>
                 <li>
                   <a href="#" target="_blank">
-                    <img
-                      src="./assets/img/redes-sociais/instagram.png"
-                      alt="Instagram"
-                    />
+                    <img src={imgInstagram} alt="Instagram" />
                   </a>
                 </li>
                 <li>
                   <a href="#" target="_blank">
-                    <img
-                      src="./assets/img/redes-sociais/twitter.png"
-                      alt="Twitter"
-                    />
+                    <img src={imgTwitter} alt="Twitter" />
                   </a>
                 </li>
               </ul>
