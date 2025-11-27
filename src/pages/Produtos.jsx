@@ -1,7 +1,5 @@
 import React from "react";
-import Topo from "../components/Topo";
 import Qualidade from "../components/Qualidade";
-import Rodape from "../components/Rodape";
 import imgPasseio from "../assets/img/produtos/passeio.png";
 import imgPasseio1 from "../assets/img/produtos/bikcraft-passeio-1.jpg";
 import imgPasseio2 from "../assets/img/produtos/bikcraft-passeio-2.jpg";
@@ -16,7 +14,6 @@ import TituloPagina from "../components/TituloPagina";
 function Produtos() {
   return (
     <>
-      <Topo />
       <TituloPagina
         textoTitulo="Produtos"
         textoSubtitulo="Conheça todos nossos produtos"
@@ -154,8 +151,6 @@ function Produtos() {
           </div>
         </div>
       </section>
-
-      <Rodape />
     </>
   );
 }

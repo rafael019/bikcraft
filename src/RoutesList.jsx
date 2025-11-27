@@ -1,4 +1,6 @@
 import React from "react";
+import Topo from "./components/Topo";
+import Rodape from "./components/Rodape";
 import Home from "./pages/Home";
 import Sobre from "./pages/Sobre";
 import Produtos from "./pages/Produtos";
@@ -8,6 +10,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function RoutesList() {
   return (
     <BrowserRouter>
+      <Topo />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="sobre" element={<Sobre />} />
@@ -15,6 +18,7 @@ function RoutesList() {
         <Route path="portfolio" element={<Portfolio />} />
         <Route path="contato" element={<Contato />} />
       </Routes>
+      <Rodape />
     </BrowserRouter>
   );
 }

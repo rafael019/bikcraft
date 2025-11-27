@@ -1,6 +1,4 @@
 import React from "react";
-import Topo from "../components/Topo";
-import Rodape from "../components/Rodape";
 import imgFacebook from "../assets/img/redes-sociais/facebook.png";
 import imgInstagram from "../assets/img/redes-sociais/instagram.png";
 import imgTwitter from "../assets/img/redes-sociais/twitter.png";
@@ -10,8 +8,6 @@ import TituloPagina from "../components/TituloPagina";
 function Contato() {
   return (
     <>
-      <Topo />
-
       <TituloPagina
         textoTitulo="Contato"
         textoSubtitulo="tire suas dúvidas com a gente"
@@ -90,8 +86,6 @@ function Contato() {
           <img src={imgMapa} alt="Endereço Bikcraft" />
         </a>
       </section>
-
-      <Rodape />
     </>
   );
 }

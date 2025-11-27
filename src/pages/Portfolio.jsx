@@ -1,13 +1,10 @@
 import React from "react";
-import Topo from "../components/Topo";
-import Rodape from "../components/Rodape";
 import PortfolioList from "../components/PortfolioList";
 import TituloPagina from "../components/TituloPagina";
 
 function Portfolio() {
   return (
     <>
-      <Topo />
       <TituloPagina
         textoTitulo="Portfólio"
         textoSubtitulo="Conheça os projetos que amamos mostrar"
@@ -53,8 +50,6 @@ function Portfolio() {
           <PortfolioList />
         </div>
       </section>
-
-      <Rodape />
     </>
   );
 }

@@ -1,7 +1,5 @@
 import React from "react";
-import Topo from "../components/Topo";
 import Qualidade from "../components/Qualidade";
-import Rodape from "../components/Rodape";
 import { Link } from "react-router-dom";
 import imgPasseio from "../assets/img/produtos/passeio.png";
 import imgEsporte from "../assets/img/produtos/esporte.png";
@@ -11,7 +9,6 @@ import PortfolioList from "../components/PortfolioList";
 function Home() {
   return (
     <>
-      <Topo />
       <section className="introducao">
         <div className="container">
           <h1>Bicicletas Feitas a Mão</h1>
@@ -86,7 +83,6 @@ function Home() {
         </div>
       </section>
       <Qualidade />
-      <Rodape />
     </>
   );
 }

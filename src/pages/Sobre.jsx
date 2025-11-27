@@ -1,14 +1,11 @@
 import React from "react";
-import Topo from "../components/Topo";
 import Qualidade from "../components/Qualidade";
-import Rodape from "../components/Rodape";
 import imgQualidade from "../assets/img/equipe-bikcraft.jpg";
 import TituloPagina from "../components/TituloPagina";
 
 function Sobre() {
   return (
     <>
-      <Topo />
       <TituloPagina
         textoTitulo="Sobre"
         textoSubtitulo="Conheça mais sobre Bikcraft"
@@ -45,7 +42,6 @@ function Sobre() {
       </section>
 
       <Qualidade />
-      <Rodape />
     </>
   );
 }
