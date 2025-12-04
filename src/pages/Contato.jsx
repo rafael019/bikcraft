@@ -4,6 +4,9 @@ import imgInstagram from "../assets/img/redes-sociais/instagram.png";
 import imgTwitter from "../assets/img/redes-sociais/twitter.png";
 import imgMapa from "../assets/img/endereco-bikcraft.jpg";
 import TituloPagina from "../components/TituloPagina";
+import Input from "../components/Forms/Input";
+import Texarea from "../components/Forms/Textarea";
+import Button from "../components/Forms/Button";
 
 function Contato() {
   return (
@@ -14,44 +17,29 @@ function Contato() {
       />
       <section className="contato animar_interno">
         <div className="container">
-          <form
-            action="enviar.php"
-            method="post"
-            name="form"
-            className="formphp contato_form grid-8"
-          >
-            <label for="nome">Nome</label>
-            <input id="nome" name="nome" type="text" />
-            <label for="email">E-mail</label>
-            <input id="email" name="email" type="text" />
-            <label for="telefone">Telefone</label>
-            <input id="telefone" name="telefone" type="text" />
-
-            <label className="nao-aparece">
-              Se você não é um robô, deixe em branco.
-            </label>
-            <input type="text" className="nao-aparece" name="leaveblank" />
-            <label className="nao-aparece">
-              Se você não é um robô, não mude este campo.
-            </label>
-            <input
+          <form className="formphp contato_form grid-8">
+            <Input
+              label="Nome"
               type="text"
-              className="nao-aparece"
-              name="dontchange"
-              value="http://"
+              name="nome"
+              placeholder="Ex. João Silva"
             />
-
-            <label for="mensagem">Mensagem</label>
-            <textarea name="mensagem" id="mensagem"></textarea>
-
-            <button
-              id="enviar"
-              name="enviar"
-              type="submit"
-              className="btn btn-preto"
-            >
+            <Input
+              label="E-mail"
+              type="email"
+              name="email"
+              placeholder="Ex. joaosilva@gmail.com"
+            />
+            <Input
+              label="Telefone"
+              type="tel"
+              name="telefone"
+              placeholder="Ex. 99 99999-9999"
+            />
+            <Texarea label="Mensagem" name="mensagem" />
+            <Button name="enviar" type="submit" classe="btn btn-preto">
               Enviar
-            </button>
+            </Button>
           </form>
 
           <div className="contato_dados grid-8">

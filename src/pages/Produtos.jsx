@@ -10,6 +10,9 @@ import imgReto from "../assets/img/produtos/retro.png";
 import imgReto1 from "../assets/img/produtos/bikcraft-retro-1.jpg";
 import imgReto2 from "../assets/img/produtos/bikcraft-retro-2.jpg";
 import TituloPagina from "../components/TituloPagina";
+import Input from "../components/Forms/Input";
+import Texarea from "../components/Forms/Textarea";
+import Button from "../components/Forms/Button";
 
 function Produtos() {
   return (
@@ -100,39 +103,14 @@ function Produtos() {
       <section class="orcamento">
         <div class="container">
           <h2 class="subtitulo">Orçamento</h2>
-          <form
-            action="enviar.php"
-            method="post"
-            name="form"
-            class="formphp form grid-8"
-          >
-            <label for="nome">Nome</label>
-            <input id="nome" name="nome" type="text" />
-            <label for="email">E-mail</label>
-            <input id="email" name="email" type="text" />
-            <label for="telefone">Telefone</label>
-            <input id="telefone" name="telefone" type="text" />
-
-            <label class="nao-aparece">
-              Se você não é um robô, deixe em branco.
-            </label>
-            <input type="text" class="nao-aparece" name="leaveblank" />
-            <label class="nao-aparece">
-              Se você não é um robô, não mude este campo.
-            </label>
-            <input
-              type="text"
-              class="nao-aparece"
-              name="dontchange"
-              value="http://"
-            />
-
-            <label for="mensagem">Especificações</label>
-            <textarea name="mensagem" id="mensagem"></textarea>
-
-            <button id="enviar" name="enviar" type="submit" class="btn">
+          <form class="formphp form grid-8">
+            <Input label="Nome" name="nome" type="text" />
+            <Input label="E-mail" name="email" type="email" />
+            <Input label="Telefone" name="telefone" type="tel" />
+            <Texarea label="Especificações" name="especificacoes" />
+            <Button name="enviar" type="submit" classe="btn">
               Enviar
-            </button>
+            </Button>
           </form>
 
           <div class="orcamento_dados grid-8">
